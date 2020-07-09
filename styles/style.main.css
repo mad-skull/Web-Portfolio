@@ -91,9 +91,8 @@ textarea {
 }
 
 .loading-overlay img {
-  width: 5rem;
-  -webkit-animation: rotate-logo 1.5s ease 0s infinite normal;
-          animation: rotate-logo 1.5s ease 0s infinite normal;
+  width: 30rem;
+  
 }
 
 .loading-overlay.dissappear {
