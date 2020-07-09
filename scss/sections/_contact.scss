@@ -1,0 +1,79 @@
+.contact{
+  opacity: 0;
+  transform: translateX(2rem);
+  transition: opacity ease 0.9s, transform ease 0.9s;
+  font-family: 'Signika', sans-serif;
+
+  &.visible{
+  transform: translateX(0rem);
+    opacity: 1;
+  }
+  h1 {
+    font-family: 'Product Sans Regular';
+    color: $primary-color;
+    font-size: 2.5rem;
+    // opacity: 0;
+    // animation: appear 0.5s ease-out 0.25s 1 normal forwards;
+    margin-bottom: 2rem;
+  }
+
+  &__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    border-radius: 0.3rem;
+    .input-group{
+      background-color: rgba($color: #FFFFFF, $alpha: 0.05);
+      position: relative;
+      margin: 1.5rem 0rem;
+      border-radius: 0.3rem;
+      display: flex;
+      input, textarea{
+        width: 100%;
+        border-radius: 0.3rem;
+        &:focus + .input-group__placeholder, &:valid + .input-group__placeholder{
+          transform: translate(0.2rem, -3.5rem);
+        }
+        &:focus{
+          box-shadow: 0 0 3pt 1pt rgba(#fff, 0.4);
+        }
+      }
+      &__placeholder{
+        color: rgba($color: #fff, $alpha: 0.5);
+        font-size: 1rem;
+        position: absolute;
+        top: 1.7rem;
+        transform: translate(1rem, -50%);
+        transition: transform ease 0.3s;
+      }
+    }
+    input, textarea{
+      background: none;
+      border: none;
+      // border: rgba(#fff, 0.4) 2px solid;
+      padding: 1rem 1rem;
+      color: rgba(#fff, 0.5);
+      font-size: 1rem;
+
+      // 
+    }
+    .button{
+      margin-top: 2rem;
+      width: 35%;
+      align-self: center;
+    }
+  }
+}
+
+@include mediaMd{
+  .contact{
+    h1{
+      font-size: 1.6rem;
+    }
+    &__form{
+      padding: 0rem;
+      margin: 0rem;
+    }
+  }
+}

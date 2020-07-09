@@ -1,0 +1,31 @@
+//for phones
+@mixin mediaXs {
+    @media screen and (max-width:600px) {
+        @content;
+    }
+}
+
+//for tablets
+@mixin mediaSm {
+    @media screen and (max-width:769px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width:1165px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (max-width:1552px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width:1553px) {
+        @content;
+    }
+}

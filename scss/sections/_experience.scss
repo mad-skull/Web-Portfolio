@@ -1,0 +1,128 @@
+.experience {
+  $root: &;
+  opacity: 0;
+  transform: translateX(2rem);
+  transition: opacity ease 0.9s, transform ease 0.9s;
+  &.visible {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+
+  h1 {
+    font-family: "Product Sans Regular";
+    color: $primary-color;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__grid {
+    width: 100%;
+    display: grid;
+    color: $primary-color;
+    grid-template-columns: repeat(4, 1fr);
+    background: rgba($color: #000000, $alpha: 0.1);
+    grid-template-areas: "employers details details details";
+
+    #{$root}__employers {
+      grid-area: employers;
+      font-family: "Product Sans Regular", sans-serif;
+
+      #{$root}__button {
+        padding: 1rem;
+        display: inline-block;
+        width: 100%;
+        transition: background ease 0.3s;
+        background: rgba($color: #000000, $alpha: 0.2);
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 4px;
+          height: 100%;
+          background-color: $secondary-color;
+          opacity: 0;
+          top: 0;
+          left: 0;
+          transition: opacity ease 0.3s;
+        }
+        &:hover {
+          background: rgba($color: #000000, $alpha: 0.4);
+          cursor: pointer;
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    #{$root}__details {
+      grid-area: details;
+      padding: 1rem;
+      padding-left: 3rem;
+      background: rgba($color: #000000, $alpha: 0.2);
+      font-family: "Roboto";
+      font-weight: 200;
+      #{$root}__title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-left: -1rem;
+        margin-bottom: 0.3rem;
+        font-family: "Product Sans Regular", sans-serif;
+        span{
+          color: $secondary-color;
+        }
+      }
+
+      #{$root}__duration {
+        margin-left: -1rem;
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+        color: $secondary-color;
+      }
+
+      li {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@include mediaMd {
+  .experience {
+    $root: &;
+    h1 {
+      font-size: 1.6rem;
+    }
+    &__grid {
+      padding: 0;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "employers"
+        "details";
+
+      #{$root}__employers {
+        #{$root}__button {
+          width: unset;
+        }
+      }
+
+      #{$root}__details{
+        padding-left: 2rem;
+      }
+      
+    }
+  }
+}
+
+@include mediaXs {
+  .experience {
+    p {
+      font-size: 1rem;
+    }
+  }
+}

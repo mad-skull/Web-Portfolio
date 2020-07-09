@@ -1,0 +1,163 @@
+.home {
+    h1 {
+        font-family: 'Product Sans Regular', 'Open Sans', sans-serif;
+        color: $primary-color;
+        font-size: 5rem;
+        font-stretch: semi-expanded;
+        opacity: 0;
+        animation: appear 0.5s ease-out 0.25s 1 normal forwards;
+        margin-bottom: 2 rem;
+    }
+
+    h4 {
+        font-family: 'Fira Mono';
+        color: $secondary-color;
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-bottom: 1.3rem;
+        opacity: 0;
+        animation: appear 0.5s ease-out 0s 1 normal forwards ;
+        margin-left: 4px;
+    }
+
+    h2 {
+        font-family: 'Product Sans Regular', 'Open Sans', sans-serif;
+        color: $secondary-color;
+        font-size: 4rem;
+        opacity: 0;
+        animation: appear 0.5s ease-out 0.5s 1 normal forwards ;
+        margin-top: 0.5rem;
+    }
+
+    p{
+        margin-top: 3rem;
+        color: $primary-color;
+        font-family: 'Fira Mono';
+        font-size: 1.3rem;
+        line-height: 30px;
+        opacity: 0;
+        animation: appear 0.5s ease-out 0.75s 1 normal forwards ;
+        padding-right: 15rem;
+    }
+
+    button{
+        display: none;
+        padding : 0.8rem;
+        font-size: 1rem;
+        font-family: 'Fira Mono';
+        margin-top: 5rem;
+        background: none;
+        color: $secondary-color;
+        border: $secondary-color solid 1px;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        opacity: 0;
+        animation: appear 0.5s ease-out 1s 1 normal forwards ;
+        transition: background ease-in 0.1s;
+        
+        &:hover{
+            background: rgba($color: #fff, $alpha: 0.1);
+        }
+
+        &:focus{
+            background: rgba($color: #FFF, $alpha: 0.2);
+        }
+    }
+
+    &__contact{
+        animation: appear 0.5s ease-out 1s 1 normal forwards ;
+        margin-top: 2rem;
+        opacity: 0;
+        a{
+            width: 3rem;
+            height: 3rem;
+            &:not(:last-child){
+                margin-right: 1.5rem;
+            }
+            img{
+                width: 2rem;
+                height: 2rem;
+                transition: transform 0.5s ease;
+                &:hover{
+                    transform: translateY(-0.5rem);
+                }
+            }
+        }
+    }
+}
+
+@include mediaLg{
+    .home{
+        h1{
+            font-size: 4.5rem;
+        }
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1rem;
+            padding-right: 10rem;
+        }
+    }
+}
+
+@include mediaMd{
+    .home{
+        h1{
+            font-size: 4.3rem;
+            margin-bottom: 3.3rem;
+            margin-bottom: 1rem;
+        }
+        h2{
+            font-size: 3rem;
+        }
+        h4,p{
+            font-size: 1.3rem;
+        }
+        p{
+            padding-right: 10rem;
+        }
+    }
+}
+
+@include mediaSm{
+    .home{
+        h1{
+            font-size: 3.6rem;
+        }
+        h2{
+            font-size: 2.8rem;
+        }
+        p{
+            padding-right: 5rem;
+        }
+    }
+}
+
+@include mediaXs{
+    .home{
+        h1{
+            font-size: 2.2rem;
+        }
+        h2{
+            font-size: 1.7rem;
+        }
+        h4,p{
+            font-size: 1rem;
+        }
+        p{
+            padding-right: 0;
+        }
+    }
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+        transform : translateY(2rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }   
+}

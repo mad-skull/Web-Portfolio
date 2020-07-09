@@ -1,0 +1,15 @@
+@import './configs/fonts';
+@import './configs/colors';
+@import './configs/page-settings';
+@import './configs/viewport-mixin';
+@import './configs/container';
+
+@import './sections/home';
+@import './sections/contact';
+@import './sections/about';
+@import './sections/experience';
+@import './sections/projects';
+
+@import './layout/button';
+@import './layout/nav';
+@import './layout/footer'
