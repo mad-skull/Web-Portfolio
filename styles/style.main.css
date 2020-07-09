@@ -91,7 +91,7 @@ textarea {
 }
 
 .loading-overlay img {
-  width: 30%;
+  width: 10rem;
   -webkit-animation: rotate-logo 0s ease 0s infinite normal;
           animation: rotate-logo 0s ease 0s infinite normal;
 }
