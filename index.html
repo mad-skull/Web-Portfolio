@@ -1,231 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Deep Awasthi">
-    <link rel="stylesheet" href="./styles/style.main.css">
-    <link rel="shortcut icon" href="assets/logos/favicon.jpg">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
-    <script src="./scripts/main.js" defer></script>
-    <!-- <link rel="icon" href="/images/sdc.gif?" type="image/x-icon"> -->
-    <title>Deep Awasthi</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Deep Awasthi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<link rel="stylesheet" href="css/icomoon.css">
+	<script src="js/app.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172731287-1"></script>
+
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins|Kaushan+Script|Raleway|Alata|Roboto|Open+Sans:300|Special+Elite|Baloo+Bhaina+2|Viga|Homemade+Apple|Rock+Salt&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/1d1e7bf2e8.js" crossorigin="anonymous"></script>
+
+
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+
+	<meta name="theme-color" content="#090a20" />
+	<style>
+		@media only screen and (max-width: 600px) {
+			.a {
+				width: 80%;
+			}
+
+			.sed {
+				font-size: 12px;
+			}
+		}
+	</style>
+
 </head>
 
-<body>
-    <div class="loading-overlay">
-        <img src="./assets/logos/sdc.gif" alt="Loading...">
-    </div>
-    <div class="content">
-        <nav class="nav">
-            <h1 class="nav__brand">
-                &ltDeep&gt
-            </h1>
-            <button class="nav__toggle" id="nav-toggle">
-                <span class="nav__hamburger"></span>
-                <span class="nav__hamburger"></span>
-                <span class="nav__hamburger"></span>
-            </button>
-            <ul class="nav__links" orientation="right">
-                <li id="home-link">
-                    <a href="#home" >
-                        Home
-                    </a>
-                </li>
-                <li id="about-link">
-                    <a href="#about" >
-                        About Me
-                    </a>
-                </li>
-                <li id="projects-link">
-                    <a href="#projects">
-                        Projects
-                    </a>
-                </li>
-                <li id="contact-link">
-                    <a href="#contact" >
-                        Get in Touch
-                    </a>
-                </li>
-                <li>
-                    <a href="assets/resume.pdf" class="button" target="_blank">
-                        Resume
-                    </a>
-                </li>
-                <div class="nav__links__contact" id="nav-contact">
-                    <a href="https://github.com/mad-skull">
-                        <img src="./assets/logos/github-logo.svg" alt="github">
-                    </a>
-                    <a href="https://www.linkedin.com/in/deep-awasthi-27467417a/">
-                        <img src="./assets/logos/linkedin.svg" alt="linkedin">
-                    </a>
-                    <a href="https://www.upwork.com/freelancers/~01b9f8316753dda717">
-                        <img src="./assets/logos/dribbble-square-brands.svg" alt="dribbble">
-                    </a>
-                    <a href="https://www.kaggle.com/madskull">
-                        <img src="./assets/logos/kaggle.svg" alt="codepen">
-                    </a>
-                    <a href="https://medium.com/@deepawasthi">
-                        <img src="./assets/logos/blogger.svg" alt="codepen">
-                    </a>
-                </div>
-            </ul>
-        </nav>
-        <main>
-            <section class="home" id="home">
-                <div class="container">
-                    <h4>Hello there! My name is</h4>
-                    <h1>Deep Awasthi.</h1>
-                    <h2>I am a data scientist.</h2>
-                    <p>I am specialized in Data Analytics, Machine Learning and Big Data.</p>
-                    <button>Contact Me!</button>
-                    <div class="home__contact">
-                        <a href="https://github.com/mad-skull">
-                            <img src="./assets/logos/github.svg" alt="github">
-                        </a>
-                        <a href="https://www.linkedin.com/in/deep-awasthi-27467417a/">
-                            <img src="./assets/logos/linkedin.svg" alt="linkedin">
-                        </a>
-                        <a href="https://www.upwork.com/freelancers/~01b9f8316753dda717">
-                            <img src="./assets/logos/dribbble.svg" alt="dribbble">
-                        </a>
-                        <a href="https://www.kaggle.com/madskull">
-                            <img src="./assets/logos/kaggle.svg" alt="codepen">
-                        </a>
-                        <a href="https://medium.com/@deepawasthi">
-                            <img src="./assets/logos/blogger.svg" alt="codepen">
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="about" id="about">
-                <div class="container">
-                    <h1>About Me</h1>
-                    <div class="about__content">
-                        <div class="about__image__container">
-                            <div class="about__image__container__image">
-                                <img src="./assets/images/avatar.png" alt="avatar">
-                                </img>
-                            </div>
-                        </div>
-                        <div class="about__text">
-                            <p>This is Deep Awasthi  from Jalandhar, India. I am a code loving boy who develops python, big data
-                                and data analysis . Currently I am pursuing my<b> BTech in Mechanical Engineering</b> from <b>Dr B R Ambedkar National Institute Of Technology.</b>
-                                I have some Experience in programming in <b>Python </b> and <b>C++ </b> as well as well qualified in  <b>Data Analysis and Visualisation. </b>
-                                Apart from being a Script kiddy and Unofficial data scientist and data analyst, I am more interested in <b>Simulation</b>, <b>Data Engineering and Big Data</b> and I am Currently Learning  about it 		
-                                </p>
-                            <div class="about__technologies">
-                                <p>
-                                    Here's a list of technologies I've been working with recently
-                                    <div class="about__technologies__grid">
-                                        <ul>
-                                            <li>Python, C++, R</li>
-                                            <li>Data Science</li>
-                                            <li>Statistics</li>
-                                            <li>UI Designing</li>
-                                        </ul>
-                                        <ul>
-                                            <li>DSA</li>
-                                            <li>Big Data</li>
-                                            <li>Simulation</li>
-                                            <li>GCP</li>
-                                        </ul>
-                                    </div>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="projects" id="projects">
-                <div class="container">
-                    <h1>Projects</h1>
-                    <div class="projects__project-container">
-                        <div class="project-container__image" style="background-image: url(./assets/images/project1.gif);">
-                        </div>
-                        <div class="project-container__description">
-                            <div class="project-container__title">
-                                Self Driving Car
-                            </div>
-                            <div class="project-container__textbox">
-                               A model of Self Driving Car that take decision by taking dataset.
-                            </div>
-                            <div class="project-container__links">
-                                <a href="https://mad-skull.github.io/Self-Driving-Car/">
-                                    <img src="./assets/logos/github-logo.svg" alt="github">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects__project-container">
-                        <div class="project-container__image" style="background-image: url(./assets/images/project2.gif);">
+<body id="particles-js">
+	<div>
+		<div class="">
+			<div class="ghey">
 
-                        </div>
-                        <div class="project-container__description">
-                            <div class="project-container__title">
-                                Accident Detection
-                            </div>
-                            <div class="project-container__textbox">
-                                A Real time Model that can detect the accident happen infront of the recording device.
-                            </div>
-                            <div class="project-container__links">
-                                <a href="https://mad-skull.github.io/Accident-Detection/">
-                                    <img src="./assets/logos/github-logo.svg" alt="github">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects__project-container">
-                        <div class="project-container__image" style="background-image: url(./assets/images/project3.gif);">
-                        </div>
-                        <div class="project-container__description">
-                            <div class="project-container__title">
-                                Object Detection
-                            </div>
-                            <div class="project-container__textbox">
-                                A real time object detection model that will identify the various objects. For example: cars, humans etc.
-                            </div>
-                            <div class="project-container__links">
-                                <a href="https://github.com/mad-skull/Object-Detector">
-                                    <img src="./assets/logos/github-logo.svg" alt="github">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="contact" id="contact">
-                <div class="container">
-                    <h1>Contact Me</h1>
-                    <form class="contact__form" action="https://formspree.io/meqrrdyg" method="POST">
-                        <div class="input-group">
-                            <input required type="text"  name="name">
-                            <label for="name" class="input-group__placeholder">Name</label>
-                        </div>
-                        <div class="input-group">
-                            <input required type="text"  name="email">
-                            <label for="email" class="input-group__placeholder">Email</label>
-                        </div>
-                        <div class="input-group">
-                            <input required type="text"  name="subject">
-                            <label for="subject" class="input-group__placeholder">Subject</label>
-                        </div>
-                        <div class="input-group">
-                            <textarea required name="description" rows="9"></textarea>
-                            <label for="subject" class="input-group__placeholder">Message</label>
-                        </div>
-                        <button class="button" type="submit">Send</button>
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <p>Developed by <a href="https://github.com/mad-skull/Web-Portfolio" target="_blank">Deep Awasthi</a></p>
+				<figure class='ghey'>
+					<img src="images/dp.jpg" alt="Deep Awasthi" style="width: 150px;">
+				</figure>
+			</div>
+			<div class="main-content">
+				<h2>Deep Awasthi</h2>
+				<h3 align="left">Hey there,</h3>
+				<p class="sed">This is Deep Awasthi from Punjab, India. I am an script kiddy who develops in python, data science algorithms
+					and Django. Currently I am pursuing
+					<b>BTech in Mechanical Engineering</b> from <b>NIT Jalandhar.</b>
+				</p>
+				<p class="sed">I have some Experience in developing <b>ML Models </b> and
+					<b>Data Analysis Alorithms.</b>
+					Apart from being a data nerd and python web developer,I am more interested in
+					<b>Big Data</b> ,<b>Data Cleaning</b> and I am Currently Learning about it
+				</p>
 
-        </footer>
-    </div>
+				<div class="resume">
+					<a href="images/resume.pdf" class="resumeButton">RESUME</a>
+				</div>
+			</div>
+
+			<section class="languages" id="languages">
+
+
+				<h2>Tech Stack</h2>
+
+				<div class="skillicons">
+
+
+					<div class="skillicon-box">
+						<i class="devicon-r-original colored"></i>
+						<span class="skillicon-title">
+							<p>R</p>
+						</span>
+					</div>
+
+					<div class="skillicon-box">
+						<i class="devicon-python-plain colored"></i>
+						<span class="skillicon-title">
+							<p>Python</p>
+						</span>
+					</div>
+					<div class="skillicon-box">
+						<i class="devicon-django-plain colored"></i>
+						<span class="skillicon-title">
+							<p>Django</p>
+						</span>
+					</div>
+					<div class="skillicon-box">
+
+						<span class="iconify" data-icon="carbon:machine-learning-model" data-inline="false"></span>
+						<p>Machine Learning </p>
+						</span>
+					</div>
+					<div class="skillicon-box">
+
+						<span class="iconify" data-icon="whh:statistics" data-inline="false"></span></span>
+						<p>Statistics </p>
+						</span>
+					</div>
+					<div class="skillicon-box">
+						<i class="devicon-mysql-plain colored"></i>
+						<span class="skillicon-title">
+							<p>MySQL</p>
+						</span>
+					</div>
+					<div class="skillicon-box">
+						<i class="devicon-postgresql-plain colored"></i>
+						<span class="skillicon-title">
+							<p>PostgreSQL</p>
+						</span>
+					</div>
+					<div class="skillicon-box">
+						<i class="devicon-mongodb-plain-wordmark colored"></i>
+						<span class="skillicon-title">
+							<p>MongoDB</p>
+						</span>
+					</div>
+
+
+
+				</div>
+
+				<h2>Tools</h2>
+				<div class="skillicons">
+					<div class="skillicon-box">
+						<i class="devicon-visualstudio-plain colored"></i>
+						<span class="skillicon-title">
+							<p>VS Code</p>
+						</span>
+					</div>
+					<div class="skillicon-box">
+
+						<span class="devicon-jupyter-plain-wordmark colored" data-icon="logos-pytorch" data-inline="false"></span>
+						<p>Jupyter </p>
+						</span>
+					</div>
+					<div class="skillicon-box">
+						<i class="devicon-git-plain colored"></i>
+						<span class="skillicon-title">
+							<p>Github</p>
+						</span>
+					</div>
+					<div class="skillicon-box">
+
+						<span class="iconify" data-icon="logos:tableau-icon" data-inline="false"></span>
+						<p>Tableau </p>
+						</span>
+					</div>
+
+				</div>
+
+
+			</section>
+			<section class="prujects" id="languages">
+				<div class="prujects__container">
+						<h2 class="languages prujects__title">Project</h2>
+
+						<div class="proj-wrapper">
+							<a style="text-decoration:none" href="https://mad-skull.github.io/Save-Animals/" id="prl-0" target="_blank">
+								<div class="project">
+									<div class="proj-info">
+										<h3>Save Animals</h3>
+										<p class="keke">A model to save animals in National Parks, Sancturies and other protected areas from poachers and hunters.</p>
+										
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="proj-wrapper">
+							<a style="text-decoration:none" href="https://mad-skull.github.io/Facial-Landmark-Detection/" id="prl-1" target="_blank">
+								<div class="project">
+									<div class="proj-info">
+										<h3>Facial Landmark Detection</h3>
+										<p class="keke">Facial Landmark Detection Framework.</p>
+										
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="proj-wrapper">
+							<a style="text-decoration:none" href="https://mad-skull.github.io/Self-Driving-Car/" id="prl-2" target="_blank">
+								<div class="project">
+									<div class="proj-info">
+										<h3>Self Driving Car </h3>
+										<p class="keke">A model of Self Driving Car that take decision by taking dataset.</p>
+										
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="proj-wrapper">
+							<a style="text-decoration:none"  href="https://mad-skull.github.io/Accident-Detection/" id="prl-3" target="_blank">
+								<div class="project">
+									<div class="proj-info">
+										<h3>Accident Detection</h3>
+										<p class="keke">A Real time Model that can detect the accident happen infront of the recording device.</p>
+										
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="proj-wrapper">
+							<a style="text-decoration:none" href="https://github.com/mad-skull/Object-Detector" id="prl-4" target="_blank">
+								<div class="project">
+									<div class="proj-info">
+										<h3>Object Detection</h3>
+										<p class="keke">A real time object detection model that will identify the various objects. For example: cars, humans etc.</p>
+										
+									</div>
+								</div>
+							</a>
+						</div>
+				</div>
+				
+			</section>
+
+
+
+
+			<section class="prujects">
+				<h2>Contact:</h2>
+			</section>
+
+			<ul class="social">
+
+				<li><a href="mailTo:da.madskull@gmail.com" target="_blank"><i
+							class="fa fa-envelope-o fa-1.5x"></i></a></li>
+				<li><a href="https://github.com/mad-skull" target="_blank"><i class="fa fa-github fa-1.5x"></i></a>
+				</li>
+				<li><a href="https://www.linkedin.com/in/deep-awasthi/" target="_blank"><i
+							class="fa fa-linkedin-square fa-1.5x"></i>
+						</i> </a> </li>
+			</ul>
+
+			<div class="copyrightSection">
+				<div class="col-md-8 text-center">
+					<p class="sed">&copy; 2020 Deep Awasthi. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		</section>
+
+	</div>
+	<script src="particles.js"></script>
+	<script src="particle.js"></script>
+
 </body>
 
 </html>
